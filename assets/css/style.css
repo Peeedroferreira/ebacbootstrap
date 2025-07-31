@@ -1,0 +1,44 @@
+/* Estilos personalizados para o projeto EBAC Viagens */
+
+/* Fundo geral da página */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Ajustes no Carrossel */
+.carousel-item img {
+    height: 60vh; /* Altura do carrossel */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    filter: brightness(0.7); /* Escurece a imagem para dar destaque ao texto */
+}
+
+/* Espaçamento padrão para as seções */
+section {
+    padding: 60px 0;
+}
+
+/* Ajustes nos Cards de Destino */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.2s ease-in-out; /* Efeito suave de transição */
+    border: none; /* Remove a borda padrão para um look mais limpo */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra sutil para profundidade */
+}
+
+.card:hover {
+    transform: scale(1.03); /* Aumenta o card ao passar o mouse */
+}
+
+/* Garante que o botão no card-body fique alinhado na base */
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .btn {
+    margin-top: auto; /* Empurra o botão para o final do card-body */
+}
